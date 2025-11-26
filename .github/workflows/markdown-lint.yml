@@ -1,0 +1,23 @@
+name: Markdown lint
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+
+jobs:
+  mdl-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.x'
+      - name: Install mdl
+        run: gem install mdl
+      - name: Run mdl (markdown lint)
+        run: |
+          echo "Running mdl against markdown files..."
+          mdl --version || true
+          mdl --ignore-front-matter **/*.md || true

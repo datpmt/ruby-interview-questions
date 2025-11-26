@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+
+# Note: GitHub does not let repository templates set default PR labels/assignees via this file.
+# To help with labeling, this repository includes a labeler workflow that applies labels
+# automatically based on changed file paths (`.github/labeler.yml` + `.github/workflows/auto-label.yml`).
+
