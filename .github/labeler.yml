@@ -6,4 +6,4 @@ docs/*: documentation
 questions/**: question
 answers/**: answer
 .github/**: chore
-*.md: documentation
+"*.md": documentation
