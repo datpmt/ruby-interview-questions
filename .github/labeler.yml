@@ -1,9 +1,14 @@
-# Map file path patterns to labels used by the actions/labeler action
-examples/*: example
-examples/**: example
-docs/**: documentation
-docs/*: documentation
-questions/**: question
-answers/**: answer
-.github/**: chore
-*.md: documentation
+documentation:
+  - "*.md"
+
+example:
+  - "examples/**"
+
+question:
+  - "questions/**"
+
+answer:
+  - "answers/**"
+
+chore:
+  - ".github/**"
