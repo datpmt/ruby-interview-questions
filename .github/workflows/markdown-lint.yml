@@ -13,7 +13,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.x'
+          ruby-version: '3.0.1'
       - name: Install mdl
         run: gem install mdl
       - name: Run mdl (markdown lint)
